@@ -5,4 +5,4 @@ YFLAGS	+= -d
 calc: calc.o lexer.o
 
 clean:
-	rm -f calc y.tab.h *.o
+	rm -f calc *.o y.tab.h y.output
