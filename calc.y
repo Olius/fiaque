@@ -8,9 +8,9 @@
 
 %token	<num>	NUM
 
-%left	<num>	'+' '-'
-%left	<num>	'*' '/'
-%left	 	NEG
+%left	'+' '-'
+%left	'*' '/'
+%left 	NEG
 
 %type	<num>	expr
 
