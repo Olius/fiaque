@@ -16,9 +16,8 @@
 
 %%
 
-input	: input expr '\n'	{ printf("%f\n", $2); }
+input	: input expr ';'	{ printf("%f\n", $2); }
 	|
-	| input      '\n'
 	;
 
 expr	: NUM

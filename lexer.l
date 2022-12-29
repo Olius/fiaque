@@ -6,6 +6,6 @@
 %%
 
 [[:digit:]]+	yylval.num = atof(yytext); return NUM;
-[-+*/()\n]	return yytext[0];
-[[:blank:]]	;
+[-+*/();]	return yytext[0];
+[[:space:]]	;
 .	fprintf(stderr, "unexpected character: %c\n", yytext[0]);
